@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+html {
+  overflow: scroll;
+}
+
+header, main, nav, footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  color: #FFF;
+  background-color: #000;
+}
+
+header {
+  background-color: #FFF;
+  padding: 10px 0;
+}
+
+
+#div-h1 {
+  background-color: #D43D28;
+  padding-left: 20%;
+}
+
+h1 {
+  margin: 0;
+  background-color: #6492CE;
+  text-align: left;
+  font-weight: normal;
+  border-left: 10px solid #FFF;
+  padding: 20px 10px;
+}
+
+h1 a, h1 a:active, h1 a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 a:hover, h1 a:focus {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+h1 a:focus {
+  outline: 2px solid #F00;
+}
+
+nav {
+  border-top: 10px solid #FFF;
+}
+
+/* No es necesario porque el texto está oculto */
+nav h2 {
+  color: #000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a , nav a:active, nav a:visited {
+  color: #7D3C4A;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+nav a:focus {
+  outline: 2px solid #F00;
+}
+
+a , a:active, a:visited {
+  color: #FFFF00;
+  text-decoration: none;
+}
+
+a:hover, a:focus  {
+  color: #f4b08c;
+  text-decoration: underline;
+}
+
+a:focus, input:focus {
+  outline: 2px solid #F00;
+}
+
+a:hover img, a:focus img  {
+  outline: 2px solid #F00;
+}
+
+#main-menu {
+  list-style-type: none;
+}
+
+#main-menu {
+  text-align: center;
+}
+
+#main-menu li{
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.enlace-transcripcion {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 40em;
+  overflow: hidden;
+}
+
+#info {
+  padding-right: 10px;
+}
+
+footer {
+  clear: both;
+  color: #000;
+  background-color: #FFF;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+footer p {
+  font-weight: bold;
+  text-align: center;
+}
+
+footer a, footer a:link, footer a:visited {
+  color: #000;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+blockquote, figure, pre {
+  border: 2px solid #FFF;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+img {
+  border: 2px solid #FFF;
+}
+
+pre {
+
+  background-color: #333;
+  overflow: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+q {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+q:before {
+  content: '"';
+}
+
+q:after {
+  content: '"';
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+
+/* Para ocultar algo en los navegadores gráficos */
+.oculto {
+  position: absolute;
+  top: -5000px;
+}
+
+.solucion-oculta {
+  display: none;
+}
+
+.solucion-visible {
+  display: block;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.centradoB {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.float-left {
+  float: left;
+  margin: 0;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+.float-right {
+  float: right;
+  margin: 0;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.maxWidth300 {
+  width: 100%;
+  max-width: 300px;
+}
+
+.maxWidth480 {
+  width: 100%;
+  max-width: 480px;
+}
+
+.maxWidth640 {
+  width: 100%;
+  max-width: 640px;
+}
+
+.video480, .video640 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  outline: 2px solid #000;
+}
+
+.video480 {
+  height: 270px;
+  max-width: 480px;
+}
+
+.video640 {
+  height: 360px;
+  max-width: 640px;
+}
+
+.sin-puntos {
+  list-style-type: none;
+}
+
+
+/* Diseño adaptativo (responsive design) */
+@media screen {
+  main {
+    margin: 0 auto;
+    width: 90%;
+	/* http://www.w3schools.com/cssref/css_units.asp */
+    max-width: 70ch;
+  }
+  
+  .two-columns main {
+    max-width: 120ch;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+  }
+  
+  #main-div {
+    float: left;
+    width: 70%;
+  }
+
+  #info {
+    float: right;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  #main-div {
+    float: left;
+    width: 60%;
+  }
+
+  #info {
+    float: right;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    line-height: 2em;
+  }
+  
+  blockquote {
+    border: 2px solid #FFF;
+    padding: 0.5em 1em;
+	margin: 1em 0;
+    font-size: 1em;
+  }
+
+  #div-h1 {
+    padding-left: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  #div-h1 {
+    padding-left: 10%;
+  }
+  
+  .video480 {
+    height: 180px;
+  }
+
+  .video640 {
+    height: 180px;
+  }
+}

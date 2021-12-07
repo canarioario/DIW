@@ -1,0 +1,27 @@
+
+.vertical {
+  height: 200px;
+  border: solid black 2px
+}
+
+.horiz {
+  border: solid black 2px
+}
+
+.row div {
+  height: 100px;
+}
+
+.red  {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+

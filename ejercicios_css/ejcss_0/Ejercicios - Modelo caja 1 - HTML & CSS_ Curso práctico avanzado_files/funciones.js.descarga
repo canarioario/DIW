@@ -1,0 +1,19 @@
+function documentWriteEmail(email) {
+  // http://www.branah.com/ascii-converter
+  var asciiString = "60 97 32 104 114 101 102 61 34 109 97 105 108 116 111 58 " + email + " 34 62 " + email + " 60 47 97 62";
+  var asciiArray = asciiString.split(" ");
+
+  for(i = 0; i < asciiArray.length; i++)
+    document.write(String.fromCharCode(asciiArray[i]));
+}
+
+function mostrarSolucion(boton) {
+  if(document.getElementById("solucion").className == "solucion-visible") {
+    document.getElementById("solucion").className = "solucion-oculta";
+	boton.innerHTML = "Mostrar solución";
+  }
+  else {
+    document.getElementById("solucion").className = "solucion-visible";
+	boton.innerHTML = "Ocultar solución";
+  }
+}
