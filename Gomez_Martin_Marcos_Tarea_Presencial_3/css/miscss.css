@@ -1,0 +1,21 @@
+#bloque1{
+    background: yellow;
+    height: 150px;
+    
+
+}
+
+#bloque2{
+    border: solid black 2px;
+    background-color: aqua;
+    height: 50px;
+  
+}
+#bloque3{
+    border: solid black 2px;
+    background-color: green;
+    height: 50px;
+  
+    
+
+}
