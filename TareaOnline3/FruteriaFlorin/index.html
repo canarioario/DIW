@@ -581,7 +581,7 @@
                         </div>
                     </div>
                 </div>
-            
+
             </div>
             <!-- Fin Sobre Nosotros Section -->
 
@@ -658,72 +658,48 @@
                 </div>
             </div>
             <!-- End Contact Section -->
-                  
- <!-- ======= Rviews Section ======= -->
- <div class="reviews-area">
-    <div class="row g-0">
-      <div class="col-lg-6">
-        <img src="assets/img/portfolio/animacion.gif" alt="" class="img-fluid">
-      </div>
-      <div class="col-lg-6 work-right-text d-flex align-items-center">
-        <div class="px-5 py-5 py-lg-0">
-          <h2>Alojar una web</h2>
-          <h5>¿Cómo alojar contenido en un servidor web?</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  id="boton">
+
+            <!-- ======= Video Section ======= -->
+            <div class="reviews-area">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="assets/img/portfolio/animacion.gif" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 work-right-text d-flex align-items-center">
+                        <div class="px-5 py-5 py-lg-0">
+                            <h2>Alojar una web</h2>
+                            <h5>¿Cómo alojar contenido en un servidor web?</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="boton">
             Ver vídeo
         </button>
-    
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-dark" id="exampleModalLabel">VIDEO EN VENTANA</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">VIDEO EN VENTANA</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                </div>
-                <div id=""class="modal-body"> 
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/COj6lA0Pa64" id="iframeVideo" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <div id="" class="modal-body">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/COj6lA0Pa64" id="iframeVideo" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-              </div>
             </div>
-          </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-          //Url del video a reproducir
-          var videoSrc='https://www.youtube.com/embed/COj6lA0Pa64';
-    
-          //Al abrir la ventana modal, le agregué autoplay igual a 1, para que se reproduzca
-          //automáticamente, en caso de que no se requiera la autoreproducción, se quita 
-          //esa parte "?autoplay=1".
-          $('#exampleModal').on('show.bs.modal', function () {  
-            var iframe=$('#iframeVideo');
-            iframe.attr("src", videoSrc+"?autoplay=1");
-          });
-    
-          //Al cerrar la ventana modal, solamente reasignamos el video al atributo del iframe
-          //y eso ocasiona que se detenga la reproducción del archivo,
-          //aunque también podríamos haber dejado el valor src en null. :)
-          $('#exampleModal').on('hidden.bs.modal', function (e) {
-            
-            var iframe=$('#iframeVideo');
-            iframe.attr("src", videoSrc);
-    
-          });
-        </script>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Rviews Section -->
+            <!-- End Video Section -->
         </main>
         <!-- End #main -->
 
@@ -815,10 +791,14 @@
             class="bi bi-arrow-up-short"></i></a>
         <!-- Vendor JS Files -->
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/video.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
 </body>
