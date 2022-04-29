@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Animacion SVG</title>
+</head>
+
+<body>
+        <svg viewBox="90 -20 100 100" width="100%" height="100%">
+            <defs>
+              <marker id="inicio" viewBox="-5 -5 10 10"
+                      markerWidth="5" markerHeight="5">
+                
+              </marker>
+            </defs>
+            <path id="ruta"
+             d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9
+               s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5
+               c-9.7,0.1-13.3,7.2-22.1,17.1
+               c-8.9,8.8-15.7,17.9-25.4,17.9
+               s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4 z"
+                  fill="none" stroke="black" 
+                  marker-inicio="url(#inicio)"/>
+                  
+            <circle r="5" fill="purple" stroke="green" fill-opacity="0.9">
+                <set attributeType="XML" attributeName="fill"  
+                to="red" dur="10s" begin="7s"
+                fill="restore" />	
+                
+          
+              <animateMotion id="forward" 
+                             dur="10s" begin="0s"  fill="freeze"
+                             keyPoints="0.3;1;0;0.3"
+                             keyTimes="0;0.7;0.7;1"
+                             calcMode="linear"
+                             transform="rotate(5,100,100)"
+                             >
+                <mpath xlink:href="#ruta"/>
+              </animateMotion>
+              <animateMotion id="backward" 
+                             begin="forward.end + 1s"
+                             dur="10s" fill="freeze"
+                             keyPoints="0.3;0;1;0.3"
+                             keyTimes="0;0.3;0.3;1"
+                             calcMode="linear"
+                             transform="rotate(5,100,100)" >
+                <mpath xlink:href="#ruta"/>
+              </animateMotion>
+            </circle>
+          </svg>
+          
+          <a class="boton_personalizado" href="javascript:location.reload()">Iniciar</a>
+         
+</body>
+
+</html>
